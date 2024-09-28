@@ -1,0 +1,86 @@
+body {
+
+    background-image: url(./img/johannes-andersson-UCd78vfC8vU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#open-btn {
+     position: absolute;
+    top: 70%; 
+    left: 10%;
+    width: 350px;
+    height: 80px;
+    font-size: 1.5rem;
+    background: transparent;
+    color: rgb(196, 6, 249);
+   border: solid 2px #fff;
+    border-radius: 10px;
+    padding: 4px;
+    box-shadow: 0 0 3px #cfc3c3;
+    transition: .5s; 
+}
+
+#open-btn:hover {
+
+    background-color: aliceblue;
+    color: black;
+
+}
+#model {
+   background-color: antiquewhite;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+   width: 200px;
+   height: 50px;
+   padding: 10px 10px;
+   border-radius: 5px;
+   font-size: 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  animation-name:animatemodel;
+  animation-duration: .4s;
+
+}
+
+#close-btn {
+    font-size: 3rem;
+}
+
+#close-btn {
+ cursor: pointer;
+ font-size: 3rem;
+ color: blue;
+}
+
+#model-container {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: 0,0,0,.2;
+}
+
+
+/* model animation */
+
+@keyframes animatenmodel {
+ 
+    form{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+    top: 50%;
+    opacity: 1 ;
+}
+
+}
